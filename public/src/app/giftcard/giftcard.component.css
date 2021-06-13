@@ -1,0 +1,51 @@
+.giftcard-heading{
+    font-size: 2.5rem;
+    font-family: Dancing Script;
+    margin-top: 15px;
+}
+
+.giftcard-subheading{
+    font-family: Dancing Script;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+.otherHeading{
+    margin-left: 35px;
+}
+
+.formBox{
+    margin-left: 10px;
+}
+
+.otherList{
+    list-style: none;
+}
+
+.formBtn{
+    margin-left:45%;
+}
+
+.otherItem{
+    font-size: 1.5rem;
+    margin-top: 35px;
+}
+
+.otherItem a{
+    text-decoration: none;
+    color:black;
+}
+
+.otherItem a:hover{
+    color:#d9534f;
+}
+
+.lineDivider{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 661px){
+    .lineDivider{
+        visibility: visible;
+    }
+}

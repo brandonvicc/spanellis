@@ -1,0 +1,42 @@
+.imgSize{
+    height: 600px;
+}
+
+.waiterPic{
+    z-index: 10;
+    height: 400px;
+}
+.restarauntPic{
+    height: 410px;
+    position: relative;
+    margin-top: -445px;
+    z-index: -1;
+    animation: slideIn .7s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    0%{transform: skewX(53deg) translateX(-1000px);}
+    100%{transform: skewX(0deg) translateX(0px);}
+
+}
+
+.hireBtn{
+    margin-right:13px;
+}
+
+.hireContent{
+    opacity: 0;
+    animation: fadeIn .3s ease-in .7s   forwards;
+}
+
+
+ul li {
+    list-style: none;
+    padding-right: 5px;
+    margin-right: 40px;
+}
+
+ul li:hover{
+    color:red;
+}

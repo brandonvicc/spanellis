@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <h1 class="text-center menuHeading text-danger">Menu</h1>
+
+    <h2 class="text-left menuHeading menuSubHeading text-danger">Starters</h2>
+    <hr class="my-4">
+    <br>
+    <div class="menu-container">
+        <div *ngFor='let item of appetizers'>
+            <div class="foodBox" >
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top cardImage" src="{{item.img}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{item.name}}</h5>
+                        <p class="card-text cardDesc text-center">{{item.desc}}</p>
+                        <div class="row justify-content-center">
+                            <button class="btn btn-outline-danger">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="text-left menuHeading menuSubHeading text-danger">Main</h2>
+    <hr class="my-4">
+    <br>
+    <div class="menu-container">
+        <div *ngFor='let item of main'>
+            <div class="foodBox" >
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top cardImage" src="{{item.img}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{item.name}}</h5>
+                        <p class="card-text cardDesc text-center">{{item.desc}}</p>
+                        <div class="row justify-content-center">
+                            <button class="btn btn-outline-danger">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="text-left menuHeading menuSubHeading text-danger">Desserts</h2>
+    <hr class="my-4">
+    <br>
+    <div class="menu-container">
+        <div *ngFor='let item of deserts'>
+            <div class="foodBox" >
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top cardImage" src="{{item.img}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{item.name}}</h5>
+                        <p class="card-text cardDesc text-center">{{item.desc}}</p>
+                        <div class="row justify-content-center">
+                            <button class="btn btn-outline-danger">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

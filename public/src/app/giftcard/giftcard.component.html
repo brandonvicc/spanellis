@@ -1,0 +1,67 @@
+<h1 class="text-center giftcard-heading text-danger">Gift Cards</h1>
+<hr class="my-4">
+
+
+<div class="row">
+    <div class="col-md formBox">
+        <h1 class="text-center text-danger giftcard-subheading">Please fill this out to Purchase Gift Card</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputname4">Name</label>
+                    <input type="name" class="form-control" id="inputname4" placeholder="Name">
+                </div>
+            </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="inputAmount">How much would you like on your card?</label>
+                    <input type="number" class="form-control" id="inputAmount" placeholder="$100.00">
+                </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            </div>
+            <div class="form-group ">
+                <div class="form-check formBtn">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Is it a Gift?
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger formBtn">Purchase</button>
+        </form>
+        <hr class="my-4 lineDivider">
+    </div>
+    <div class="col-md otherBox">
+        <h1 class="text-center giftcard-subheading otherHeading text-danger">Other offers</h1>
+        <ul class="otherList">
+            <li class="otherItem text-center"><a [routerLink]="['/careers']"> Careers</a></li>
+            <li class="otherItem text-center"><a [routerLink]="['/contactus']"> Contact Us</a></li>
+            <li class="otherItem text-center"><a [routerLink]="['/menu']"> Order To-go</a></li>
+            <li class="otherItem text-center"><a [routerLink]="['/story']"> About Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<h5 class="text-center giftcard-subheading text-danger">Get Spanelli's Gift Card sent directly to your email!</h5>

@@ -1,0 +1,42 @@
+.top-list-section{
+    display: flex;
+}
+
+.footer-section{
+    margin-bottom:0;
+}
+
+.top-list{
+    flex:2;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-item a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+}
+
+.list-item a:hover{
+    color:red;
+}
+
+.list-item i:hover{
+    color:red;
+}
+
+#icon-list{
+    flex:1;
+}
+
+.top-logo-text{
+    flex:1;
+}
+
+.top-logo-text h1{
+    font-family: Dancing Script;
+    font-size: 4rem;
+    padding-bottom: 35px;
+}

@@ -1,0 +1,21 @@
+.formBox{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bartender{
+    width: 100%;
+}
+
+.formBtn{
+    margin-left:45%;
+}
+
+.careerImg{
+    height: 700px;
+    width: 100%;
+}
+
+#carouselText{
+    font-size: 2rem;
+}   

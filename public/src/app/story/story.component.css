@@ -1,0 +1,45 @@
+.fadeIn{
+    opacity: 0;
+    animation: fadeIn .3s ease-in .7s   forwards;
+}
+
+.classyFont{
+    font-family: Dancing Script;
+}
+
+.imgBox{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.storyImg{
+    width: 70%;
+    transition: .5s ease-in;
+}
+
+.storyImg:hover{
+    transform: scale(1.5);
+}
+
+
+.imgRow{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.imgRow img{
+    margin-top:3%;
+    width: 30%;
+    height: 75%;
+}
+
+div p{
+    padding-left: 1%;
+    padding-right:1%;
+}
+

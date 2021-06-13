@@ -1,0 +1,23 @@
+.cardImg{
+    height: 500px;
+}
+
+.header-img-font{
+    font-size: 4rem;
+}
+
+.buttonSpot{
+    margin-left: 40%;
+}
+
+.content{
+    margin-top: 20%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .buttonSpot{
+        margin-left:25%;
+    }
+}
