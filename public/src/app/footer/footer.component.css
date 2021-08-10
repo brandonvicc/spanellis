@@ -40,3 +40,48 @@
     font-size: 4rem;
     padding-bottom: 35px;
 }
+
+
+@media only screen and (min-width: 650px) and (max-width: 1100px){
+    .top-list-section #bottom-list{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: -50px;
+    }
+
+    .top-list-section #bottom-list .list-item{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .top-list-section{
+        flex-direction: row;
+    }
+    .top-list{
+        flex-direction: column-reverse;
+    }
+
+    #icon-list{
+        margin-top: -20px;
+        margin-left: 55px;
+    }
+
+    #icon-list li i{
+        margin-bottom: 20px;
+    }
+
+    #top-section-list{
+        margin-bottom: -5px;
+    }
+
+    #top-section-list-item{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #bottom-list{
+        margin-left: 25px;
+    }
+}
