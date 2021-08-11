@@ -1,0 +1,46 @@
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+#reviewOrder{
+    border: 1px solid blue;
+    flex: 2;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+#editOrder{
+    
+    flex: 3;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+/* Edit Order section */
+
+.extraContainer{
+    display:flex;
+    justify-content:left;
+}
+
+.imgBg{
+    flex:1;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.extraCard{
+    position: relative;
+    top: 115px;
+    max-height:100%;
+    max-width: 100%;
+    background-color: rgba(217, 83, 79,.7);
+    padding-bottom:6px;
+}

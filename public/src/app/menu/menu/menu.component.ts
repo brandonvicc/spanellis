@@ -40,7 +40,7 @@ export class MenuComponent implements OnInit {
     },
   ]
 
-  main = [
+  main:any = [
     {
       name:'Bacon Burger',
       desc:'Grilled Bacon Burger with Dynamite Sauce',
@@ -78,7 +78,7 @@ export class MenuComponent implements OnInit {
     },
   ]
 
-  deserts = [
+  deserts:any = [
     {
       name:'Chocolate Cake',
       desc:'Moist Chocolate Cake',

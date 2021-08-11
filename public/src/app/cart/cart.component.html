@@ -1,1 +1,24 @@
-<h1>Cart Coming Soon</h1>
+<main>
+    <section id="editOrder">
+        <h1 class="classyFont text-danger">Your Order</h1>
+        <button class="btn btn-outline-danger ">Add More Items</button>
+        <hr class="my-4">
+        <h2 class="classyFont text-danger">Other Items You May Like!!</h2>
+
+        <div class="extraContainer">
+            <div *ngFor="let item of addExtras">
+                <div class="imgBg" style="background-image: url('{{item.img}}');">
+                    <div class="extraCard">
+                        <h3>{{item.name}}</h3>
+                        <button class="btn btn-danger">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="reviewOrder">
+        <h2 class="classyFont text-danger">Review Your Order</h2>
+    </section>
+</main>
