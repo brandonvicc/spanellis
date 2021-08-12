@@ -14,6 +14,7 @@ export class CartComponent implements OnInit {
 
   addExtras:any = [
     {
+      id:4,
       name:'Tomato Soup',
       desc:'Freshly made and not from a can we promise',
       img:'./../../../assets/tomato-soup.jpg',
@@ -21,6 +22,7 @@ export class CartComponent implements OnInit {
       quantity:1
     },
     {
+      id:5,
       name:'Potatoe Soup',
       desc:'Fresh made Potatoe Soup',
       img:'./../../../assets/potatoe-soup.jpg',
@@ -32,6 +34,7 @@ export class CartComponent implements OnInit {
 
   cart:any = [
     {
+      id:1,
       name:'Bacon Burger',
       desc:'Grilled Bacon Burger with Dynamite Sauce',
       img:'./../../../assets/bacon-burger.jpg',
@@ -39,6 +42,7 @@ export class CartComponent implements OnInit {
       quantity:1
     },
     {
+      id:2,
       name:'Stuffed Avocados',
       desc:'Avocados stuffed with the good stuff no one can turn down',
       img:'./../../../assets/stuffed-avocado.jpg',
@@ -46,6 +50,7 @@ export class CartComponent implements OnInit {
       quantity:1
     },
     {
+      id:3,
       name:'Tiramisu Cake',
       desc:"Delicious fresh made Tiramisu",
       img:'./../../../assets/coffee-cake.webp',
@@ -53,4 +58,9 @@ export class CartComponent implements OnInit {
       quantity:1
     },
   ]
+
+
+  onRemove(id:number){
+    this.cart.map()
+  }
 }
