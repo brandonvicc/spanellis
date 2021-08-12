@@ -1,17 +1,19 @@
 <main>
     <section id="editOrder">
         <h1 class="classyFont text-danger">Your Order</h1>
-        <button class="btn btn-outline-danger ">Add More Items</button>
-        <hr class="my-4">
-        <h2 class="classyFont text-danger">Other Items You May Like!!</h2>
+        <a [routerLink]="['/menu']"><button class="btn btn-outline-danger">Add More Items</button></a>
+        <div *ngIf="addExtras.length > 0">
+            <hr class="my-4">
+            <h2 class="classyFont text-danger">Other Items You May Like!!</h2>
 
-        <div class="extraContainer">
-            <div *ngFor="let item of addExtras">
-                <div class="imgBg" style="background-image: url('{{item.img}}');">
-                    <div class="extraCard">
-                        <h3 class="text-white">{{item.name}}</h3>
-                        <h4>${{item.price}}.00</h4>
-                        <button class="btn btn-outline-light">Add to Order</button>
+            <div class="extraContainer">
+                <div *ngFor="let item of addExtras">
+                    <div class="imgBg" style="background-image: url('{{item.img}}');">
+                        <div class="extraCard">
+                            <h3 class="text-white">{{item.name}}</h3>
+                            <h4>${{item.price}}.00</h4>
+                            <button (click)="onAddExtra(item.id)" class="btn btn-outline-light">Add to Order</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -23,19 +25,94 @@
                     <tr *ngFor="let item of cart">
                         <td><img src="{{item.img}}" class="tableImg" alt="food image"></td>
                         <td class="cartItem">{{item.name}}</td>
-                        <th class="cartItem" scope="row">
+                        <th class="cartItem" id="quantity" scope="row">
                             <button (click)="onRemove(item.id)"><i class="fa fa-minus"></i></button>
                             {{item.quantity}}
-                            <button><i class="fa fa-plus"></i></button>
+                            <button (click)="onAdd(item.id)"><i class="fa fa-plus"></i></button>
                         </th>
-                        <td class="cartItem">${{item.price}}.00</td>
+                        <td class="cartItem">${{item.price * item.quantity}}.00</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    <section id="reviewOrder bg-light">
-        <h2 class="classyFont text-danger">Review Your Order</h2>
+    <section id="reviewOrder">
+        <div class="reviewOrderContainer">
+            <h2 class="classyFont text-danger">Review Your Order</h2>
+            <div class="location mb-3">
+                <div class="addressBox">
+                    <p class="classyFont text-danger"><strong>Pick Up Location: </strong></p>
+                    <h3>123 Main Street, Dallas, Texas 12345</h3>
+                </div>
+                <i class="fa fa-map-pin"></i>
+            </div>
+            <h2 class="classyFont text-danger">Order Details</h2>
+            <div class="tableContainer">
+            <table class="table table-striped">
+                <thead>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of cart">
+                        <td class="cartItem">{{item.name}}</td>
+                        <th class="cartItem" scope="row">{{item.quantity}}</th>
+                        <td class="cartItem">${{item.price * item.quantity}}.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form>
+            <label for="silverware">
+                <h4>Include Silverware?</h4>
+                <input type="checkbox" name="silverware" id="silverware">
+                <strong> Yes</strong>
+            </label>
+            <hr class="my-4">
+            <label for="specialInstructions">
+                <h4>Special Instructions</h4>
+                <input type="text" name="specialInstructions" id="specialInstructions" placeholder="How else can we help?" maxlength="40">
+                <p class="text-black-50">Limit 40 characters. May not be honored if request requires an additional charge.</p>
+            </label>
+            <hr class="my-4">
+            <label for="coupon">
+                <h4 class="mb-2">Coupon</h4>
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="coupon" class="sr-only">Password</label>
+                        <input type="text" class="form-control" id="coupon" placeholder="Enter Coupon Code">
+                    </div>
+                    <button class="btn btn-danger mb-2">Check Coupon</button>
+                </form>
+            </label>
+
+            <div class="totalSection">
+                <div class="labels">
+                    <h5>Subtotal</h5>
+                    <h5>Tip</h5>
+                    <h5>Tax</h5>
+                    <h4>TOTAL</h4>
+                </div>
+                <div class="totalBreakdown">
+                    <p>${{cartSubtotal()}}.00</p>
+                    <p>${{tip(cartSubtotal())}}</p>
+                    <p>${{tax(cartSubtotal())}}</p>
+                    <p>${{ cartTotal(cartSubtotal(), tip(cartSubtotal()),tax(cartSubtotal())) }}</p>
+
+                </div>
+            </div>
+
+
+
+            <br>
+            <input type="submit" value="Checkout" class="btn btn-danger">
+        </form>
+
+
+        
+        </div>
+        
     </section>
 </main>
