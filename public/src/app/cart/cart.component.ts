@@ -16,12 +16,16 @@ export class CartComponent implements OnInit {
     {
       name:'Tomato Soup',
       desc:'Freshly made and not from a can we promise',
-      img:'./../../../assets/tomato-soup.jpg'
+      img:'./../../../assets/tomato-soup.jpg',
+      price: 7.00,
+      quantity:1
     },
     {
       name:'Potatoe Soup',
       desc:'Fresh made Potatoe Soup',
-      img:'./../../../assets/potatoe-soup.jpg'
+      img:'./../../../assets/potatoe-soup.jpg',
+      price: 7.00,
+      quantity:1
     },
   ]
 

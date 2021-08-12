@@ -9,16 +9,37 @@
             <div *ngFor="let item of addExtras">
                 <div class="imgBg" style="background-image: url('{{item.img}}');">
                     <div class="extraCard">
-                        <h3>{{item.name}}</h3>
-                        <button class="btn btn-danger">Add to Order</button>
+                        <h3 class="text-white">{{item.name}}</h3>
+                        <h4>${{item.price}}.00</h4>
+                        <button class="btn btn-outline-light">Add to Order</button>
                     </div>
                 </div>
             </div>
         </div>
-
+        <hr class="my-4">
+        <div class="tableContainer">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
-    <section id="reviewOrder">
+    <section id="reviewOrder bg-light">
         <h2 class="classyFont text-danger">Review Your Order</h2>
     </section>
 </main>
