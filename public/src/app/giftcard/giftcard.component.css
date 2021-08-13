@@ -64,4 +64,14 @@
     .lineDivider{
         visibility: visible;
     }
+
+    .pictureSection{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .pictureSection{
+        display: none;
+    }
 }

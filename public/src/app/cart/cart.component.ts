@@ -130,8 +130,6 @@ export class CartComponent implements OnInit {
   cartTotal(num1:any,num2:any,num3:any):string{
     num2 = parseFloat(num2)
     num3 = parseFloat(num3)
-    console.log(num1,num2,num3)
-
     let total = num1+num2+num3;
     return total;
   }

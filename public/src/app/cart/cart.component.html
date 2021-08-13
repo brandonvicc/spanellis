@@ -19,6 +19,7 @@
             </div>
         </div>
         <hr class="my-4">
+        <h2 class="classyFont text-danger">Edit My Cart</h2>
         <div class="tableContainer">
             <table class="table table-striped">
                 <tbody>
@@ -26,9 +27,9 @@
                         <td><img src="{{item.img}}" class="tableImg" alt="food image"></td>
                         <td class="cartItem">{{item.name}}</td>
                         <th class="cartItem" id="quantity" scope="row">
-                            <button (click)="onRemove(item.id)"><i class="fa fa-minus"></i></button>
+                            <button class="button" (click)="onRemove(item.id)"><i class="fa fa-minus"></i></button>
                             {{item.quantity}}
-                            <button (click)="onAdd(item.id)"><i class="fa fa-plus"></i></button>
+                            <button class="button" (click)="onAdd(item.id)"><i class="fa fa-plus"></i></button>
                         </th>
                         <td class="cartItem">${{item.price * item.quantity}}.00</td>
                     </tr>

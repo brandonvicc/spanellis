@@ -40,3 +40,10 @@ ul li {
 ul li:hover{
     color:red;
 }
+
+@media only screen and (min-width: 2165) and (max-width: 3000px){
+    .restarauntPic{
+        width: 100%;
+    }
+
+}
