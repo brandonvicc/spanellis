@@ -11,7 +11,10 @@
 }
 
 .content{
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
     margin-top: 20%;
+    padding: 10px;
 }
 
 
@@ -19,5 +22,15 @@
 @media only screen and (max-width: 600px) {
     .buttonSpot{
         margin-left:25%;
+    }
+}
+
+@media only screen and (min-width:1564px){
+    .content{
+        margin-top: 280px;
+    }
+
+    .buttonSpot{
+        margin-left: 47%;
     }
 }

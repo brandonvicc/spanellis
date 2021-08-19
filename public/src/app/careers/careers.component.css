@@ -19,3 +19,12 @@
 #carouselText{
     font-size: 2rem;
 }   
+
+.heroContext{
+    background-color: rgba(0,0,0,.7);
+}
+
+.heroText{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
