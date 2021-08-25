@@ -1,3 +1,8 @@
+body{
+    height: 100vh;
+}
+
+
 .imgSize{
     height: 600px;
 }
@@ -9,11 +14,16 @@
 .restarauntPic{
     height: 410px;
     position: relative;
-    left: -500px;
-        margin-top: 0;
+    left: -40px;
+    top: -407px;
+    margin-top: 0;
     z-index: -1;
     animation: slideIn .7s ease-in;
     animation-fill-mode: forwards;
+}
+
+.hireSection{
+    max-height: 450px;
 }
 
 @keyframes slideIn {
@@ -27,6 +37,7 @@
 }
 
 .hireContent{
+    margin-top: -405px;
     opacity: 0;
     animation: fadeIn .3s ease-in .7s   forwards;
 }
@@ -43,11 +54,15 @@ ul li:hover{
 }
 
 
-@media screen and (max-width: 2166){
+@media only screen and (max-width: 2166){
     .restarauntPic{
         left: -500px;
         margin-top: 0;
         margin-top: -445px;
+    }
+
+    .hireContent{
+        margin-top: 0px;
     }
 
 }
