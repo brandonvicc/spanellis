@@ -10,17 +10,9 @@ body{
 .waiterPic{
     z-index: 10;
     height: 400px;
+    padding-bottom: 30px;
 }
-.restarauntPic{
-    height: 410px;
-    position: relative;
-    left: -40px;
-    top: -407px;
-    margin-top: 0;
-    z-index: -1;
-    animation: slideIn .7s ease-in;
-    animation-fill-mode: forwards;
-}
+
 
 .hireSection{
     max-height: 450px;
@@ -37,7 +29,6 @@ body{
 }
 
 .hireContent{
-    margin-top: -405px;
     opacity: 0;
     animation: fadeIn .3s ease-in .7s   forwards;
 }
@@ -61,8 +52,5 @@ ul li:hover{
         margin-top: -445px;
     }
 
-    .hireContent{
-        margin-top: 0px;
-    }
 
 }
